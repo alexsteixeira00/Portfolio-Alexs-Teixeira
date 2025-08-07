@@ -7,18 +7,20 @@
     <title>Portfólio | Alexs Teixeira</title>
 </head>
 <body>
+
+
     <header id="home">
         <ul>
-            <li>
+            <li class="efeito-cursor">
                 <a href="#home">Home</a>
             </li>
-            <li>
+            <li class="efeito-cursor">
                 <a href="#projetos">Projetos</a>
             </li>
-            <li>
+            <li class="efeito-cursor">
                 <a href="#sobre">Sobre</a>
             </li>
-            <li>
+            <li class="efeito-cursor">
                 <a href="#contato">Contatos</a>
             </li>
 
@@ -158,8 +160,16 @@
     <footer>
         <p>Feito com amor ❤️  e dedicacão por Alexs Teixeira</p>
     </footer>
+    <div class="cursor-bolinha"></div>
+    <script src="./scripts.js">
+        const cursor = document.querySelector('.cursor-bolinha');
 
-    <script src="./scripts.js"></script>
+        document.addEventListener('mousemove', function(info) 
+        {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+    </script>
 </body>
 
 

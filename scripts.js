@@ -11,3 +11,4 @@ tsParticles.load("tsparticles", {
     size: { value: 2 },
   },
 });
+
