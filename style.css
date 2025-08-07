@@ -546,18 +546,14 @@
       text-shadow: 0 0 10px #eef3f3, 0 0 10px #e0f1f1, 0 0 10px #f4f8f8;
     }
 
-    .cursor-bolinha{
-      width: 15px;
-      height: 15px;
-      border-radius: 50%;
-      background-color: #ff00cc;
-      text-shadow: #ff00cc;
-      position: fixed;
-      pointer-events: none;
-      transform: translate(-50, -50);
-      z-index: 9999;
-      transition: transform 0.1s ease;
-    }
+     .efeito-cursor{
+      cursor: pointer;
+      transition: transform 0.4s ease-in-out;
+ }
+ 
+    .efeito-cursor:hover {
+     transform: translateY(-10px);
+ }
 
     @media (max-width: 768px) {
       .principal h1 {
